@@ -8,7 +8,7 @@ import './Logo.scss';
 const Logo = () => {
     return (
         <Link className='logo' href="/">
-            <Image className='logo__image' src={logo} alt="ClickyGroup Logo" width={128} height={77} />
+            <Image className='logo__image' src={logo} alt="ClickyGroup Logo" width={128} height={77} priority />
         </Link>
     );
 };
