@@ -1,4 +1,5 @@
 @import "styles/_colors";
+@import "styles/mixins";
 
 .c-logo {
   display: flex;
@@ -15,5 +16,15 @@
     width: 8rem;
     height: 4.8rem;
     object-fit: contain;
+
+    @include screen_md {
+      width: 10rem;
+      height: 6rem;
+    }
+
+    @include screen_xl {
+      width: 13.5rem;
+      height: 5.75rem;
+    }
   }
 }
