@@ -29,10 +29,23 @@ a {
   letter-spacing: 3.28px;
   font-weight: 600;
   text-transform: uppercase;
+
+  &:focus {
+    outline: 1px solid $sea-blue;
+    border-radius: 1rem;
+    color: $light-navy-blue;
+    margin-left: 1rem;
+    transition: margin-left 0.3s ease;
+  }
 }
 
 button {
   border: none;
   background: none;
   cursor: pointer;
+  outline-color: $light-navy-blue;
+
+  &:focus {
+    outline: 0.2rem solid $light-navy-blue;
+  }
 }
