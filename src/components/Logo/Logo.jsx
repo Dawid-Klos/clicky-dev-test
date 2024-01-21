@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <Link className='c-logo' href="/">
             <svg className='c-logo__image' xmlns="http://www.w3.org/2000/svg" width="217" height="93" viewBox="0 0 217 93">
-                <g fill="none" fill-rule="evenodd" opacity="1">
+                <g fill="none" fillRule="evenodd" opacity="1">
                     <g>
                         <g>
                             <g>
