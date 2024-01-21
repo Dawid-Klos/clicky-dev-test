@@ -1,7 +1,8 @@
-import Header from 'components/Header/Header';
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(() => import('components/Header/Header'), { ssr: false });
 
 import styles from 'app/page.module.scss';
-import Nav from 'components/Nav/Nav';
 
 export default function Home() {
   return (
