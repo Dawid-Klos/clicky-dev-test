@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { navItems } from 'data/navItems';
 import './Nav.scss';
 
-const Nav = ({ isMenuOpen, toggleMenu }) => {
+const Nav = ({ isMenuOpen, toggleMenu = () => { } }) => {
 
     return (
         <nav className={`c-nav ${isMenuOpen && 'c-nav--is-open'}`}>
