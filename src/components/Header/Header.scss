@@ -1,0 +1,73 @@
+@import "styles/_mixins";
+@import "styles/_colors";
+
+.c-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: $white;
+
+  &--is-active {
+    @include gradient($sea-blue, $light-navy-blue);
+  }
+
+  &__menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.c-icon {
+  fill: $sea-blue;
+
+  &__rect-top {
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+    transform-origin: left center;
+  }
+
+  &__rect-middle {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+
+  &__rect-bottom {
+    transition: transform 0.3s ease;
+    transform-origin: left center;
+    transform: rotate(0deg);
+  }
+}
+
+.c-icon--is-open .c-icon__rect-top {
+  transition: transform 0.3s ease;
+  transform: translate(-6px, -10px) rotate(45deg);
+}
+
+.c-icon--is-open .c-icon__rect-middle {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.c-icon--is-open .c-icon__rect-bottom {
+  transition: transform 0.3s ease;
+  transform: translate(-10px, 18px) rotate(-45deg);
+}
+
+.c-header--is-active .c-icon {
+  fill: $white;
+}
+
+.c-header--is-active .c-logo__image {
+  color: $white;
+  transition: color 0.4s ease;
+}
+
+.c-header--is-active .c-divider {
+  background-color: $white;
+}
