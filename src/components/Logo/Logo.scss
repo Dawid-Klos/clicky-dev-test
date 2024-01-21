@@ -1,4 +1,16 @@
+@import "styles/_colors";
+
 .c-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+    margin: 0;
+    color: $sea-blue;
+  }
+
   &__image {
     width: 8rem;
     height: 4.8rem;
