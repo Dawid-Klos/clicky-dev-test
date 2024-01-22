@@ -1,31 +1,25 @@
 @import "styles/_mixins";
 @import "styles/_colors";
 
-.c-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  background-color: $white;
-
+.c-header\@mobile {
   @include page_padding;
 
-  &--is-active {
-    @include gradient($sea-blue, $light-navy-blue);
+  display: flex;
+  flex-flow: row wrap;
 
-    min-height: 100dvh;
+  @include screen_lg {
+    display: none;
+  }
+
+  &--is-active {
+    @include gradient($black, $light-navy-blue);
+
     min-width: 100%;
     z-index: 100;
-    position: fixed;
-    left: 0;
-    top: 0;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   &__wrapper {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -79,15 +73,15 @@
   transform: translate(-10px, 18px) rotate(-45deg);
 }
 
-.c-header--is-active .c-icon {
+.c-header\@mobile--is-active .c-icon {
   fill: $white;
 }
 
-.c-header--is-active .c-logo__image {
+.c-header\@mobile--is-active .c-logo__image {
   color: $white;
   transition: color 0.4s ease;
 }
 
-.c-header--is-active .c-divider {
+.c-header\@mobile--is-active .c-divider {
   background-color: $white;
 }
