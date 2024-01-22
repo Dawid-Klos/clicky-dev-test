@@ -12,6 +12,13 @@
   transition: transform, opacity 0.5s ease;
   transform: translateY(-200%);
 
+  @include screen_lg {
+    opacity: 1;
+    transform: none;
+    height: auto;
+    padding: 0;
+  }
+
   &--is-open {
     opacity: 1;
 
@@ -27,6 +34,19 @@
     gap: 1.5rem;
     padding: 4rem 1rem;
     margin-left: -1rem;
+
+    @include screen_lg {
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0;
+      margin-left: 0;
+    }
+
+    @include screen_xl {
+      gap: 3.5rem;
+    }
   }
 
   &__item {
@@ -34,13 +54,41 @@
   }
 
   &__link {
+    position: relative;
     width: 100%;
     padding: 1rem 1rem 1rem 0;
     color: $white;
     font-weight: 700;
+
+    @include screen_lg {
+      color: $sea-blue;
+      font-weight: 600;
+      padding: 1rem;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      transform: scaleX(0);
+      background-color: $sea-blue;
+      transition: transform 0.4s;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
   }
 
   &__copy {
     color: $white;
+
+    @include screen_lg {
+      display: none;
+    }
   }
 }
