@@ -14,6 +14,7 @@
   &--is-active {
     @include gradient($black, $light-navy-blue);
 
+    touch-action: none;
     min-width: 100%;
     z-index: 100;
   }
