@@ -1,13 +1,13 @@
 @mixin body-regular {
   font-size: 1rem;
   letter-spacing: 0.89px;
+  line-height: 1.4rem;
   font-weight: 400;
 }
 
 @mixin body-large {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   letter-spacing: 1.42px;
-  font-weight: 600;
 }
 
 @mixin body-bold {

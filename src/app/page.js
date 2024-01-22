@@ -1,14 +1,17 @@
-import dynamic from 'next/dynamic';
+import Hero from 'components/Hero/Hero';
+import Header from 'components/Header/Header';
 
-const Header = dynamic(() => import('components/Header/Header'), { ssr: false });
+import './page.scss';
 
-import styles from 'app/page.module.scss';
 
 export default function Home() {
   return (
     <>
       <Header />
-    </>
 
+      <main className='main'>
+        <Hero />
+      </main>
+    </>
   );
 }
