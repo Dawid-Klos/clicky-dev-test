@@ -6,11 +6,21 @@
   flex-flow: row wrap;
   justify-content: space-between;
   min-height: 100dvh;
-  padding: 0 1rem;
   background-color: $white;
+
+  @include page_padding;
 
   &--is-active {
     @include gradient($sea-blue, $light-navy-blue);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
   }
 
   &__menu-toggle {
