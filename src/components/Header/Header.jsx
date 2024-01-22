@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import Logo from 'components/Logo/Logo';
+import Logo from 'components/common/Logo/Logo';
 import Nav from 'components/Nav/Nav';
-import Divider from "components/Divider/Divider";
+import Divider from "components/common/Divider/Divider";
 
 import './Header.scss';
 
