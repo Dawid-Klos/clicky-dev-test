@@ -1,0 +1,30 @@
+@import "styles/_colors";
+@import "styles/mixins";
+
+.c-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+    margin: 0;
+    color: $sea-blue;
+  }
+
+  &__image {
+    width: 8rem;
+    height: 4.8rem;
+    object-fit: contain;
+
+    @include screen_md {
+      width: 10rem;
+      height: 6rem;
+    }
+
+    @include screen_xl {
+      width: 13.5rem;
+      height: 5.75rem;
+    }
+  }
+}

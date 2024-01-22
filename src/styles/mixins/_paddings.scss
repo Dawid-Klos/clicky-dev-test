@@ -1,0 +1,16 @@
+@mixin page_padding {
+  padding: 0 1rem;
+
+  @include screen_lg {
+    min-height: 100%;
+    padding: 2rem 3rem 0 3rem;
+  }
+
+  @include screen_xl {
+    padding: 2rem 4rem 0 4rem;
+  }
+
+  @include screen_xxl {
+    padding: 3rem 4rem 0 4rem;
+  }
+}

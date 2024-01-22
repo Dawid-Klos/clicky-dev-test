@@ -25,7 +25,29 @@ h3 {
 
 a {
   color: $sea-blue;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   letter-spacing: 3.28px;
   font-weight: 600;
+  text-transform: uppercase;
+
+  &:focus {
+    outline-color: $sea-blue;
+    border-radius: 1rem;
+    color: $light-navy-blue;
+  }
+
+  @include screen_xl {
+    font-size: 0.875rem;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline-color: $light-navy-blue;
+
+  &:focus {
+    outline: 0.2rem solid $light-navy-blue;
+  }
 }
