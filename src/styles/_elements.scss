@@ -5,16 +5,25 @@ body {
 }
 
 h1 {
-  letter-spacing: 3.46px;
-  font-size: 4.125rem;
+  font-size: 3.125rem;
   font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.46px;
   color: $white;
+
+  @include screen_md {
+    font-size: 4.125rem;
+  }
 }
 
 h2 {
-  letter-spacing: 2.78px;
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   font-weight: 700;
+
+  @include screen_xl {
+    font-size: 3.125rem;
+    letter-spacing: 2.78px;
+  }
 }
 
 h3 {
@@ -25,8 +34,8 @@ h3 {
 
 a {
   color: $sea-blue;
-  font-size: 0.75rem;
   letter-spacing: 3.28px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -36,7 +45,7 @@ a {
     color: $light-navy-blue;
   }
 
-  @include screen_xl {
+  @include screen_lg {
     font-size: 0.875rem;
   }
 }

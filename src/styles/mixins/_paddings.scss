@@ -7,10 +7,26 @@
   }
 
   @include screen_xl {
-    padding: 2rem 4rem 0 4rem;
+    padding: 3rem 4rem 0 4rem;
   }
 
   @include screen_xxl {
-    padding: 3rem 4rem 0 4rem;
+    padding: 3rem 5rem 0 5rem;
+  }
+}
+
+@mixin section_padding {
+  padding: 2rem 1rem;
+
+  @include screen_lg {
+    padding: 4rem 3rem;
+  }
+
+  @include screen_xl {
+    padding: 4rem 4rem;
+  }
+
+  @include screen_xxl {
+    padding: 5rem 4rem;
   }
 }

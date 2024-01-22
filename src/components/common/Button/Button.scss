@@ -1,0 +1,38 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.c-button {
+  @include button;
+
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.2s ease;
+
+  @include screen_md {
+    padding: 1.25rem 3.25rem;
+  }
+
+  &--blue {
+    background-color: $sea-blue;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $sea-blue;
+      transform: scale(0.98);
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $sea-blue;
+
+    &:hover {
+      background-color: $sea-blue;
+      color: $white;
+      transform: scale(0.98);
+    }
+  }
+}
