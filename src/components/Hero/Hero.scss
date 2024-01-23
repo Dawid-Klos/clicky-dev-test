@@ -5,6 +5,7 @@
   @include section_padding;
 
   position: relative;
+  min-height: calc(100vh - 110px - 2rem);
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -13,10 +14,12 @@
   gap: 2rem;
 
   @include screen_lg {
+    min-height: calc(100vh - 144px - 4rem);
     gap: 2.25rem;
   }
 
   @include screen_xl {
+    min-height: calc(100vh - 156px - 4rem);
     gap: 2.75rem;
   }
 
