@@ -40,9 +40,9 @@ a {
   text-transform: uppercase;
 
   &:focus {
-    outline-color: $sea-blue;
     border-radius: 1rem;
-    color: $light-navy-blue;
+    outline: 0.2rem medium $light-navy-blue;
+    outline-offset: 0.25rem;
   }
 
   @include screen_lg {
@@ -56,7 +56,12 @@ button {
   cursor: pointer;
   outline-color: $light-navy-blue;
 
+  @include screen_lg {
+    font-size: 0.875rem;
+  }
+
   &:focus {
-    outline: 0.2rem solid $light-navy-blue;
+    outline: 0.15rem solid $light-navy-blue;
+    outline-offset: 0.25rem;
   }
 }

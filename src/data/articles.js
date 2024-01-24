@@ -8,4 +8,5 @@ export const myArticle = {
         'Donec eros est, varius ut nibh in. Hendrerit pharetra orci. Vivamus orci urna, dictum sed orci mattis, eleifend varius ante. Sed tincidunt risus ac maximus feugiat. Ut lobortis tortor sed orci varius euismod. Vestibulum convallis, ex non egestas maximus, lectus mauris vestibulum.',
     ],
     image: myArticleImage,
+    imageAlt: 'Beautiful nature with lake, forest and mountains in the background'
 }

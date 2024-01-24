@@ -1,0 +1,99 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.swiper {
+  width: 100%;
+  min-height: 600px;
+  margin: 5rem 0;
+
+  @include screen_xxl {
+    min-height: 600px;
+    margin: 5rem 0;
+  }
+}
+
+.swiper-slide {
+  max-width: 90%;
+
+  @include screen_md {
+    max-width: 70%;
+  }
+
+  @include screen_xl {
+    max-width: 60%;
+  }
+}
+
+.c-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 4rem 1rem;
+
+  @include screen_lg {
+    gap: 1.5rem;
+    padding: 6rem 2rem;
+  }
+
+  @include screen_xl {
+    gap: 2rem;
+  }
+
+  &__avatar {
+    width: 8rem;
+    height: 8rem;
+    border: 0.35rem solid $white;
+    border-radius: 50%;
+
+    @include screen_xxl {
+      width: 11rem;
+      height: 11rem;
+      border: 0.5rem solid $white;
+      max-width: 1000px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    font-weight: 600;
+    color: $white;
+
+    @include screen_lg {
+      font-size: 1.25rem;
+      line-height: 1.8rem;
+      max-width: 80%;
+    }
+
+    @include screen_xl {
+      max-width: 90%;
+    }
+  }
+
+  &__author {
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__background-wrapper {
+    z-index: -1;
+
+    &::after {
+      @include gradient($black, $light-navy-blue);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      border-radius: 1rem;
+    }
+  }
+
+  &__background {
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
