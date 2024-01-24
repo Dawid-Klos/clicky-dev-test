@@ -1,0 +1,35 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.c-slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  @include screen_xxl {
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+
+  &__button {
+    background-color: transparent;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.25rem;
+    border: 2px solid $sea-blue;
+    border-radius: 50%;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__button--active {
+    background-color: $sea-blue;
+    padding: 0.6rem;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
+  }
+}
