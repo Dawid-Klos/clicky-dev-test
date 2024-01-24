@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import './Article.scss';
 
-const Article = ({ title, subtitle, paragraphs, image }) => {
+const Article = ({ title, subtitle, paragraphs, image, imageAlt }) => {
     return (
         <section className="c-article">
             <article className="c-article__left-col">
@@ -17,7 +17,7 @@ const Article = ({ title, subtitle, paragraphs, image }) => {
                 }
             </article>
             <div className="c-article__right-col">
-                <Image className="c-article__image" src={image} alt="Beautiful nature with lake, forest and mountains in the background" loading="lazy" />
+                <Image className="c-article__image" src={image} alt={imageAlt} loading="lazy" />
             </div>
         </section>
     );
