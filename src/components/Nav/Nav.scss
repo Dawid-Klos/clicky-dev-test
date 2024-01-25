@@ -86,7 +86,8 @@
       transition: transform 0.4s;
     }
 
-    &:hover:after {
+    &:hover:after,
+    &:focus:after {
       transform: scaleX(1);
     }
   }

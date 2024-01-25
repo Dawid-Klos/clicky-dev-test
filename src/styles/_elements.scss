@@ -28,21 +28,31 @@ h2 {
 
 h3 {
   letter-spacing: 1.63px;
-  font-size: 2rem;
+  font-size: 1.1rem;
+  line-height: normal;
   font-weight: 700;
+
+  @include screen_md {
+    font-size: 1.25rem;
+  }
 }
 
 a {
+  max-width: max-content;
   color: $sea-blue;
   letter-spacing: 3.28px;
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 
   &:focus {
-    border-radius: 1rem;
-    outline: 0.2rem medium $light-navy-blue;
-    outline-offset: 0.25rem;
+    outline: 0;
+    color: $light-navy-blue;
+  }
+
+  &:hover {
+    color: $sea-blue;
   }
 
   @include screen_lg {
@@ -54,7 +64,6 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-  outline-color: $light-navy-blue;
 
   @include screen_lg {
     font-size: 0.875rem;
@@ -63,5 +72,33 @@ button {
   &:focus {
     outline: 0.15rem solid $light-navy-blue;
     outline-offset: 0.25rem;
+    box-shadow: 0 4px 32px rgba($sea-blue, 0.45);
+  }
+}
+
+input {
+  position: relative;
+  outline: none;
+  border: 0.12rem solid $white;
+  border-radius: 0.4rem;
+  background: transparent;
+
+  padding-left: 0.5rem;
+
+  color: $white;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  letter-spacing: 1.63px;
+
+  &::placeholder {
+    color: $white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    letter-spacing: 1.63px;
+  }
+
+  &:focus {
+    border: 0.12rem solid $sea-blue;
+    box-shadow: 0 4px 36px rgba($sea-blue, 0.24);
   }
 }
