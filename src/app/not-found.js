@@ -12,7 +12,7 @@ export default function Home() {
             <section className="c-not-found">
                 <h1 className="c-not-found__title">Oops - Page not found</h1>
                 <p className="c-not-found__description">Sorry, but the page you are looking for does not exist.</p>
-                <Button title="GO BACK" color="blue" />
+                <Button title="GO BACK" href="/" color="blue" />
             </section>
             <Footer />
         </>
