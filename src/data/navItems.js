@@ -1,26 +1,26 @@
 export const navItems = [
     {
         label: 'Link One',
-        href: '/'
+        href: '/one'
     },
     {
         label: 'Link Two',
-        href: '/'
+        href: '/two'
     },
     {
         label: 'Link Three',
-        href: '/'
+        href: '/three'
     },
     {
         label: 'Link Four',
-        href: '/'
+        href: '/four'
     },
     {
         label: 'Link Five',
-        href: '/'
+        href: '/five'
     },
     {
         label: 'Link Six',
-        href: '/'
+        href: '/six'
     }
 ];
