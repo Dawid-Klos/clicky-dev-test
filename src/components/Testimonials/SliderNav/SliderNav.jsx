@@ -18,6 +18,7 @@ const SliderNav = ({ testimonials, activeSlide }) => {
                     key={index}
                     onClick={() => handleSlide(index)}
                     type="button"
+                    aria-label="Slider indicator"
                 ></button>
             ))}
         </div>
