@@ -43,7 +43,7 @@ const Testimonials = () => {
                         <p className="c-testimonial__content">{testimonial.description}</p>
                         <p className="c-testimonial__author">{testimonial.name} / {testimonial.role} / {testimonial.company}</p>
                         <div className="c-testimonial__background-wrapper">
-                            <Image className="c-testimonial__background" src={testimonial.background} alt='' quality={100} fill={true} loading="lazy" />
+                            <Image className="c-testimonial__background" src={testimonial.background} alt='' quality={100} fill={false} loading="lazy" />
                         </div>
                     </SwiperSlide>
                 ))
