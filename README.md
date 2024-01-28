@@ -3,16 +3,14 @@
 This is a [Next.js](https://nextjs.org/) project created for the ClickyGroup developer test.
 
 
-## Table of Contents
+## 📋 Table of Contents
 
-* [Project Design - Notes](#project-design-notes)
-* [Use of BEMIT - Notes](#bemit-notes)
-* [Tech Stack](#tech-stack)
-* [Running the project locally](#installation)
-* [Live project](#live-project)
-* [Summary](#summary)
-
-
+* [Project Design - Notes](#%EF%B8%8F-project-design---notes)
+* [Use of BEMIT - Notes](#-use-of-bemit---notes)
+* [Tech Stack](#%EF%B8%8F-technology-stack)
+* [Running the project locally](#%EF%B8%8F-running-the-project-locally)
+* [Live project](#%E2%84%B9%EF%B8%8F-live-project)
+* [Summary](#-summary)
 
 ## 🖼️ Project Design - Notes
 
