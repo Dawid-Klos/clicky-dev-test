@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+
 import "./globals.scss";
 
 const proximaNova = localFont({
@@ -24,8 +25,16 @@ const proximaNova = localFont({
 });
 
 export const metadata = {
-  title: "Clicky",
-  description: "A website created for the Clicky interview process.",
+  title: "ClickyGroup - Dev Test",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget nisi a dui porttitor posuere.",
+  openGraph: {
+    type: "website",
+    locale: "en_IE",
+    url: "https://clicky-dev-test.vercel.app",
+    title: "ClickyGroup - Dev Test",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget nisi a dui porttitor posuere.",
+    image: "https://clicky-dev-test.vercel.app/og-image.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -4,7 +4,7 @@ import './Logo.scss';
 
 const Logo = () => {
     return (
-        <Link className='c-logo' href="/">
+        <Link className='c-logo' href="/" aria-label="Come back to homepage">
             <svg className='c-logo__image' xmlns="http://www.w3.org/2000/svg" width="217" height="93" viewBox="0 0 217 93">
                 <g fill="none" fillRule="evenodd" opacity="1">
                     <g>
