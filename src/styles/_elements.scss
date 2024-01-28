@@ -46,17 +46,17 @@ a {
   text-transform: uppercase;
   transition: color 0.3s ease;
 
+  @include screen_lg {
+    font-size: 0.875rem;
+  }
+
   &:focus {
-    outline: 0;
+    outline: none;
     color: $light-navy-blue;
   }
 
   &:hover {
     color: $sea-blue;
-  }
-
-  @include screen_lg {
-    font-size: 0.875rem;
   }
 }
 
@@ -78,17 +78,15 @@ button {
 
 input {
   position: relative;
-  outline: none;
   border: 0.12rem solid $white;
   border-radius: 0.4rem;
   background: transparent;
-
-  padding-left: 0.5rem;
-
   color: $white;
   font-size: 1rem;
   padding-left: 0.5rem;
   letter-spacing: 1.63px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 
   &::placeholder {
     color: $white;
