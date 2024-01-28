@@ -14,7 +14,7 @@ export default function Home() {
         <>
             <Header />
             <section className="c-not-found">
-                <Image className="c-not-found__image" src={NotFoundImg} alt="404" width={500} height={500} />
+                <Image className="c-not-found__image" src={NotFoundImg} alt="404" width={500} height={500} priority />
                 <h1 className="c-not-found__title">Page not found</h1>
                 <p className="c-not-found__description">Sorry, but the page you are looking for does not exist.</p>
                 <Button title="GO BACK" href="/" color="blue" />
